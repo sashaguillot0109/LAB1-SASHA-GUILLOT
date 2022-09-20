@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <img src ="./assets/images/su_banner.gif" alt="banner">
+    <title>Home</title><br>
+    <a href="index.html">Home</a><br>
+    <a href="about.html">About Us</a><br>
+    <a href="services.html">Our Services</a><br>
+    <a href="contact.html">Contact Us</a><br>
+</head>
+<body>
+   <h2>Contact Us :</h2>
+   
+    <form>
+        <fieldset>
+            <legend>Personal Information :</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" size="25" required><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" size="25" reqired><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" size="35" required><br>
+            <p>Please select the music genre(s) that you like :</p>
+            <input type="checkbox" id="Type1" name="Type1" value="Classic">
+            <label for="Type1">Classic</label><br>
+            <input type="checkbox" id="Type2" name="Type2" value="Jazz">
+            <label for="Type2">Jazz</label><br>
+            <input type="checkbox" id="Type3" name="Type3" value="Blues">
+            <label for="Type3">Blues</label><br>
+            <input type="checkbox" id="Type4" name="Type4" value="Instrumental">
+            <label for="Type4">Instrumental</label><br>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Your Message :</legend>
+            <form action="/action_page.php">
+                <label for="Discover">How did you hear about us :</label>
+                <select id="Discover" name="Discover" size="4" multiple>
+                  <option value="Web">Our website</option>
+                  <option value="Friends">Friends</option>
+                  <option value="TV">TV adv</option>
+                  <option value="Other">Other</option>
+                </select><br><br>
+            <p>Would you recommend us to your friends ?
+            <input type="checkbox" id="Type1" name="Type1" value="Classic" checked>
+            <label for="Type">Yes</label>
+            <input type="checkbox" id="Type1" name="Type1" value="Classic">
+            <label for="Type">No</label>
+            <input type="checkbox" id="Type1" name="Type1" value="Classic">
+            <label for="Type">Maybe your request:</label>
+            </p>
+            <form method="post" action="traitement.php">
+                <p>
+                    <textarea name="ameliorer" id="ameliorer"></textarea>
+                </p>
+             </form>
+            <input type="checkbox" id="Type1" name="Type1" value="Classic" checked>
+            <label for="Type">Sign me up for email updates</label><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.865997124276!2d-79.39194918437191!3d43.67175667912071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2e0b64e1140d%3A0xd11156503e310196!2sSpa%20at%20Four%20Seasons%20Toronto!5e0!3m2!1sfr!2sca!4v1663703347145!5m2!1sfr!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer> 
+        <p>Copyright © 2022 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: Adrien TABOUREL - All rights 
+            reserved </p>
+    </footer>
+</body>
+</html>
